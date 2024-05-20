@@ -31,42 +31,13 @@
   </div>
 
   <!-- a-frame scene -->
-  <a-scene
-    vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
-    embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: true;"
-  >
-    <!-- a-nft is the anchor that defines an Image Tracking entity -->
-    <!-- on 'url' use the path to the Image Descriptors created before. -->
-    <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
-    <a-nft
-      type="nft"
-      url="https://raw.githack.com/Thorsten-Trinkaus/Test/ccc02e0d04ec3f61af8295ae71c52611d2deea43/p_g_159_0001"
-      emitevents="true"
-      smooth="true"
-      smoothCount="5"
-      smoothTolerance="0.01"
-      smoothThreshold="1"
-    >
+ <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+            
        <a-box color="green" depth="250" height="250" width="250" position="0 125 0"></a-box>
-      
-      <!-- Define the text on each side of the box -->
-      <!-- Front face -->
-      <a-text value="Front" color="white" align="center" width="250" position="0 125 125" rotation="0 0 0"></a-text>
-      <!-- Back face -->
-      <a-text value="Back" color="white" align="center" width="250" position="0 125 -125" rotation="0 180 0"></a-text>
-      <!-- Left face -->
-      <a-text value="Left" color="white" align="center" width="250" position="-125 125 0" rotation="0 90 0"></a-text>
-      <!-- Right face -->
-      <a-text value="Right" color="white" align="center" width="250" position="125 125 0" rotation="0 -90 0"></a-text>
-      <!-- Top face -->
-      <a-text value="Top" color="white" align="center" width="250" position="0 250 0" rotation="-90 0 0"></a-text>
-      <!-- Bottom face -->
-      <a-text value="Bottom" color="white" align="center" width="250" position="0 0 0" rotation="90 0 0"></a-text>
-      
-    </a-nft>
-    <!-- static camera that moves according to the device movemenents -->
-    <a-entity camera position="0 1.6 5"></a-entity>
-  </a-scene>
+        </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+     
 </body>
