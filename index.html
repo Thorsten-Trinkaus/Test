@@ -49,21 +49,22 @@
       smoothTolerance="0.01"
       smoothThreshold="1"
     >
-      <a-box color="green" depth="250" height="250" width="250" position="0 125 0">
-        <!-- Define the text on each side of the box -->
-        <!-- Front face -->
-        <a-text value="Front" color="white" align="center" width="250" position="0 0 125" rotation="0 0 0"></a-text>
-        <!-- Back face -->
-        <a-text value="Back" color="white" align="center" width="250" position="0 0 -125" rotation="0 180 0"></a-text>
-        <!-- Left face -->
-        <a-text value="Left" color="white" align="center" width="250" position="-125 0 0" rotation="0 90 0"></a-text>
-        <!-- Right face -->
-        <a-text value="Right" color="white" align="center" width="250" position="125 0 0" rotation="0 -90 0"></a-text>
-        <!-- Top face -->
-        <a-text value="Top" color="white" align="center" width="250" position="0 125 0" rotation="-90 0 0"></a-text>
-        <!-- Bottom face -->
-        <a-text value="Bottom" color="white" align="center" width="250" position="0 -125 0" rotation="90 0 0"></a-text>
-      </a-box>
+       <a-box color="green" depth="250" height="250" width="250" position="0 125 0"></a-box>
+      
+      <!-- Define the text on each side of the box -->
+      <!-- Front face -->
+      <a-text value="Front" color="white" align="center" width="250" position="0 125 125" rotation="0 0 0"></a-text>
+      <!-- Back face -->
+      <a-text value="Back" color="white" align="center" width="250" position="0 125 -125" rotation="0 180 0"></a-text>
+      <!-- Left face -->
+      <a-text value="Left" color="white" align="center" width="250" position="-125 125 0" rotation="0 90 0"></a-text>
+      <!-- Right face -->
+      <a-text value="Right" color="white" align="center" width="250" position="125 125 0" rotation="0 -90 0"></a-text>
+      <!-- Top face -->
+      <a-text value="Top" color="white" align="center" width="250" position="0 250 0" rotation="-90 0 0"></a-text>
+      <!-- Bottom face -->
+      <a-text value="Bottom" color="white" align="center" width="250" position="0 0 0" rotation="90 0 0"></a-text>
+      
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera position="0 1.6 5"></a-entity>
