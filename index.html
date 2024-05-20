@@ -43,20 +43,20 @@
     <a-nft
       type="nft"
       url="https://raw.githack.com/Thorsten-Trinkaus/Test/ccc02e0d04ec3f61af8295ae71c52611d2deea43/p_g_159_0001"
-      emitevents="false"
+      emitevents="true"
       smooth="true"
-      smoothCount="10"
-      smoothTolerance=".01"
+      smoothCount="100"
+      smoothTolerance=".1"
       smoothThreshold="5"
       size="0.1"
     >
       <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
       
       <a-entity
-      position="200 0 0"
+      position="200 1000 0"
   material="color: black"
   text="width: 1000; align: center; color: green; value: HELLO WORLD."></a-entity>
-      <a-box color='green' depth='1' height='1' width='1' position='0 0.5 0'></a-box>
+      <a-box color='green' depth='1' height='100' width='100' position='500 100 0'></a-box>
     </a-nft>
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
